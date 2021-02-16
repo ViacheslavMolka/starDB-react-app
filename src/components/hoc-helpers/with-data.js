@@ -12,7 +12,7 @@ const withData = (View, getData) => {
       componentDidMount() {
         getData()
           .then((data) => {
-            data.length = 6;
+            data.length = 8;
             this.setState({
               data
             });

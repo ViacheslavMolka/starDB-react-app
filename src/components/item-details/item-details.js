@@ -19,7 +19,7 @@ export {
 export default class ItemDetails extends Component {
 
   state = {
-    item: {},
+    item: null,
     image: null
   }
 

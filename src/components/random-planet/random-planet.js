@@ -9,7 +9,7 @@ export default class RandomPlanet extends Component {
   swapiService = new SwapiService();
 
   static defaultProps = {
-    updateInterval: 10000
+    updateInterval: 100000
   };
 
   static propTypes = {
@@ -31,7 +31,7 @@ export default class RandomPlanet extends Component {
   componentDidMount() {
     const { updateInterval } = this.props;
     this.updatePlanet();
-    this.interval = setInterval(this.updatePlanet, updateInterval);
+    // this.interval = setInterval(this.updatePlanet, updateInterval);
   }
 
   // componentWillUnmount() {
